@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root {
+    --h1: 64px;
+    --h2: 36px;
+    --t1: 22px;
+}
+/** Font */
+.pop {
+    font-family: 'Poppins';
+}
+.lp-bigFont{
+    font-size: var(--h1);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    margin-bottom: 50px;
+}
+.lp-medFont{
+    font-size: var(--h2);
+    font-weight: 700;
+    line-height: 1;
+}
+.lp-font{
+    font-size: var(--t1);
+    line-height: 1.3;
+}
+
+.lp-card img{
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+}
