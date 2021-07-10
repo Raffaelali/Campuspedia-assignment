@@ -16,6 +16,7 @@ class CreateRecipesTable extends Migration
         Schema::create('recipes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('judul', 255);
+            $table->string('subjudul', 255);
             $table->text('text_recipe');
             $table->string('image', 255)->nullable();
             $table->timestamps();
