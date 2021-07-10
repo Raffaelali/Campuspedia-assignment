@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +13,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Auth::routes();
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('/sign', 'SignController@index')->name('Sign');
+
+// halaman khusus para chef
+Route::middleware('auth')->group(function () {
 });
