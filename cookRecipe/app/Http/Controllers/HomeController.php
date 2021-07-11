@@ -19,7 +19,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $recipes = Recipe::all();
+        $recipes = Recipe::all()->reverse();
         return view('landingPage', compact('recipes'));
     }
 }
