@@ -4,7 +4,7 @@
 <section class="loginContent">
     <div class="layar">
         <div class="user signinBx">
-            <div class="imageBx"><img src="{{asset('images/pexels-sasha-maslova-8388520(2).jpg')}}" alt="" id="pict1"></div>
+            <div class="imageBx"><img src="{{asset('images/food4.jpeg')}}" alt="" id="pict1"></div>
             <div class="formBx">
                 <form class="formSign" method="POST" action="{{ route('login') }}">
                     @csrf
@@ -29,7 +29,7 @@
                     <p class="signup">Already have an account? <a href="#" onclick="toggle();">Sign In</a></p>
                 </form>
             </div>
-            <div class="imageBx"><img src="{{asset('images/pexels-zetong-li-1784578.jpg')}}" alt="" id="pict1"></div>
+            <div class="imageBx"><img src="{{asset('images/food5.jpeg')}}" alt="" id="pict1"></div>
         </div>
     </div>
 </section>
