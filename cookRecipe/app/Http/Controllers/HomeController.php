@@ -22,4 +22,10 @@ class HomeController extends Controller
         $recipes = Recipe::all()->reverse();
         return view('landingPage', compact('recipes'));
     }
+
+    public function all()
+    {
+        $recipes = Recipe::all()->reverse();
+        return view('all', compact('recipes'));
+    }
 }
