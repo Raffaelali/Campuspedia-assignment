@@ -103,4 +103,11 @@ class RecipeController extends Controller
         Recipe::destroy($recipe->id);
         return redirect('/recipes');
     }
+
+    public function search(Request $request)
+    {
+        $recipe = Recipe::where('judul', 'like', '%' . $request->get('keyword') . '%')->get();
+
+        return json_encode($recipe);
+    }
 }
