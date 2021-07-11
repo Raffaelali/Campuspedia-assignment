@@ -6,9 +6,9 @@
     <section class="">
         <p class="d-flex justify-content-center align-items-center">
         <span class="me-3">Are u a chef?</span>
-        <button type="button" class="btn btn-outline-light btn-rounded">
+        <a href="{{ route('Sign') }}" type="button" class="btn btn-outline-light btn-rounded">
             Start making recipe!
-        </button>
+        </a>
         </p>
     </section>
     <!-- Section: CTA -->

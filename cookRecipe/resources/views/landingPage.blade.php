@@ -28,28 +28,28 @@
 
     <section class="pt-5 pb-2 bg-light">
         <div class="container" style="padding-left:2.5%;">
-            <h1 class="mb-3 lp-bigFont text-center">Have a taste of new recipes</h1>
+            <h1 class="mb-3 lp-bigFont text-center">Have a taste of some recipes</h1>
             <div class="row">
-                @foreach ($recipes as $recipe)
+                @for ($i = 2; $i >= 0; $i--)
                     <div class="col-4 mt-5">
                         <div class="card lp-card rounded">
-                            <img src="{{ asset('images/' . $recipe->image) }}" class="card-img-top img-fluid" alt="...">
+                            <img src="{{ asset('images/' . $recipes[$i]->image) }}" class="card-img-top img-fluid" alt="...">
                             <div class="card-body bg-light">
-                                <h5 class="card-title lp-medFont">{{$recipe->judul}}</h5>
-                                <p class="card-text lp-font pop">{{$recipe->subjudul}}</p>
-                                <a href="{{ route('Recipes.show', $recipe->id) }}" class="card-link">Go to Recipe</a>
+                                <h5 class="card-title lp-medFont">{{$recipes[$i]->judul}}</h5>
+                                <p class="card-text lp-font pop">{{$recipes[$i]->subjudul}}</p>
+                                <a href="{{ route('Recipes.show', $recipes[$i]->id) }}" class="card-link">Go to Recipe</a>
                             </div>
                         </div>                    
                     </div>
-                @endforeach
+                @endfor
         </div>
     </section>
 
     <section class="py-5">
         <div class="container pb-5" style="padding-left:2.5%;">
-            <button type="button" class="btn-lg btn-outline-primary btn-rounded pl-medFont">
+            <a href="{{ route('all') }}"type="button" class="btn-lg btn-outline-primary btn-rounded pl-medFont">
                 More Recipe
-            </button>
+            </a>
         </div>
     </section>
 </main>
