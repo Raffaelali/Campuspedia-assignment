@@ -33,11 +33,11 @@
                 @foreach ($recipes as $recipe)
                     <div class="col-4 mt-5">
                         <div class="card lp-card rounded">
-                            <img src="{{asset('images/food2.jpg')}}" class="card-img-top img-fluid" alt="...">
+                            <img src="{{ asset('images/' . $recipe->image) }}" class="card-img-top img-fluid" alt="...">
                             <div class="card-body bg-light">
                                 <h5 class="card-title lp-medFont">{{$recipe->judul}}</h5>
                                 <p class="card-text lp-font pop">{{$recipe->subjudul}}</p>
-                                <a href="#" class="card-link">Read More</a>
+                                <a href="{{ route('Recipes.show', $recipe->id) }}" class="card-link">Go to Recipe</a>
                             </div>
                         </div>                    
                     </div>

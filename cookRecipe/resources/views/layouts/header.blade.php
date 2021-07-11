@@ -13,8 +13,8 @@
         @else
         <nav>
             <ul>
-                <li><a href="/">List Recipe</a></li>
-                <li><a href="/">Make Recipe</a></li>
+                <li><a href="{{ route('Recipes.index') }}">List Recipe</a></li>
+                <li><a href="{{ route('Recipes.create') }}">Make Recipe</a></li>
                 <li><a href="/">{{ Auth::user()->name }}</a></li>
                 <li><a href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();">{{ __('Logout') }}</a></li>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
