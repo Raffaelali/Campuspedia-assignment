@@ -1,0 +1,32 @@
+/** edit form */
+.edit-form form input, .edit-form form textarea{
+    border:none;
+    resize: none;
+}
+.edit-form form input:nth-child(4) {
+    width: 15em;
+}
+.edit-form form input::placeholder,.edit-form form input:focus
+,.edit-form form textarea:focus{
+    outline: none;
+}
+
+.image-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: grey;
+}
+.theImage {
+    width: max-content;
+    height: max-content ;
+}
+
+.CP-button{
+    float: right;
+    margin-right: 10%;
+}
