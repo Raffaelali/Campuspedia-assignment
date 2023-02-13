@@ -13,7 +13,7 @@
             <div class="row mb-5 pb-5">
                 <div class="col mt-5">
                     <div class="col-7">
-                        <h2 class="text-muted">Hai, selamat datang di</h2>
+                        <h2 class="text-muted">Hai hai, selamat datang di</h2>
                         <h2 class="lp-bigFont">Test and Gather Feedback</h2>
                         <p class="lp-font">Present interactions and gather feedback with smart animations and dynamic overlays that bring your designs to life.</p>
                         <img class="img-fluid w-100" src="{{ asset('images/Hangout.svg') }}" alt="">
